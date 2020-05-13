@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 11, 2020 12:55:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Library.model.Checkout" table="checkout" schema="public" optimistic-lock="version">
+        <id name="searchclient" type="string">
+            <column name="searchclient" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="clientname" type="string">
+            <column name="clientname" length="50" />
+        </property>
+        <property name="picture" type="string">
+            <column name="picture" length="100" />
+        </property>
+        <property name="searchbook" type="string">
+            <column name="searchbook" length="20" />
+        </property>
+        <property name="booktitle" type="string">
+            <column name="booktitle" length="20" />
+        </property>
+        <property name="author" type="string">
+            <column name="author" length="20" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="50" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="13" />
+        </property>
+    </class>
+</hibernate-mapping>

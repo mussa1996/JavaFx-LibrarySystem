@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 11, 2020 12:55:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Library.model.Signup" table="signup" schema="public" optimistic-lock="version">
+        <id name="username" type="string">
+            <column name="username" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstname" type="string">
+            <column name="firstname" length="30" />
+        </property>
+        <property name="lastname" type="string">
+            <column name="lastname" length="30" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="20" />
+        </property>
+        <property name="confirm" type="string">
+            <column name="confirm" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
